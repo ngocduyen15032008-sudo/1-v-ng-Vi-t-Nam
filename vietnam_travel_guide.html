@@ -1,0 +1,140 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Du lịch Việt Nam</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    header, nav, footer { background: #0066cc; color: white; padding: 15px; text-align: center; }
+    nav a { color: white; margin: 0 10px; text-decoration: none; font-weight: bold; }
+    .container { padding: 20px; max-width: 900px; margin: auto; }
+    img { width: 100%; border-radius: 10px; margin: 15px 0; }
+    /* Hiệu ứng + giao diện mới */
+    img { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    img:hover { transform: scale(1.03); box-shadow: 0 4px 12px rgba(0,0,0,0.3); }
+    .btn { background:#ff6600; color:white; padding:10px 18px; border-radius:8px; text-decoration:none; }
+    .tour-form { background:#f2f2f2; padding:20px; border-radius:10px; margin-top:30px; }
+    input, select { width:100%; padding:10px; margin:8px 0; border-radius:6px; border:1px solid #ccc; }
+    input[type=submit] { background:#0066cc; color:white; border:none; cursor:pointer; }
+    input[type=submit]:hover { opacity:0.9; }
+  </style>
+</head>
+<body>
+<header>
+  <h1>Khám phá Việt Nam</h1>
+</header>
+<nav>
+  <a href="#cities">6 Thành phố TTTW</a>
+  <a href="#mountains">Vùng núi phía Bắc</a>
+</nav>
+<div class="container">
+  <h2 id="cities">6 Thành phố trực thuộc Trung ương</h2>
+  <ul>
+    <li><a href="#hanoi">Hà Nội</a></li>
+    <li><a href="#hcm">TP. Hồ Chí Minh</a></li>
+    <li><a href="#danang">Đà Nẵng</a></li>
+    <li><a href="#haiphong">Hải Phòng</a></li>
+    <li><a href="#cantho">Cần Thơ</a></li>
+    <li><a href="#hue">Huế</a></li>
+  </ul>
+
+  <h2 id="mountains">Vùng núi phía Bắc</h2>
+  <a href="#sapa">Sapa</a> – <a href="#hg">Hà Giang</a> – <a href="#mcc">Mù Cang Chải</a>
+</div>
+  <h2>Đăng ký tư vấn & tour du lịch</h2>
+  <div class="tour-form">
+    <form>
+      <label>Họ và tên</label>
+      <input type="text" placeholder="Nhập họ tên">
+
+      <label>Email</label>
+      <input type="email" placeholder="Nhập email">
+
+      <label>Số điện thoại</label>
+      <input type="text" placeholder="Nhập số điện thoại">
+
+      <label>Chọn điểm đến</label>
+      <select>
+        <option>Hà Nội</option>
+        <option>TP. Hồ Chí Minh</option>
+        <option>Đà Nẵng</option>
+        <option>Hải Phòng</option>
+        <option>Cần Thơ</option>
+        <option>Huế</option>
+        <option>Sapa</option>
+        <option>Hà Giang</option>
+        <option>Mù Cang Chải</option>
+      </select>
+
+      <input type="submit" value="Đăng ký ngay">
+    </form>
+  </div>
+
+<footer>© 2025 Du lịch Việt Nam</footer>
+</body>
+</html>
+
+<!-- Subpages embedded below -->
+
+<!-- Hanoi.html -->
+<section id="hanoi">
+  <h2>Hà Nội</h2>
+  <img src="https://images.unsplash.com/photo-1544986581-efac024faf62" alt="Hà Nội">
+  <p>Thủ đô ngàn năm văn hiến với Hồ Gươm, Phố cổ, Văn Miếu và nền ẩm thực độc đáo.</p>
+</section>
+
+<!-- HCMC.html -->
+<section id="hcm">
+  <h2>TP. Hồ Chí Minh</h2>
+  <img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528" alt="TPHCM">
+  <p>Thành phố năng động nhất Việt Nam, nổi bật với chợ Bến Thành, Nhà thờ Đức Bà, phố đi bộ Nguyễn Huệ.</p>
+</section>
+
+<!-- Danang.html -->
+<section id="danang">
+  <h2>Đà Nẵng</h2>
+  <img src="https://images.unsplash.com/photo-1502590464431-3b66d77494ef" alt="Đà Nẵng">
+  <p>Thành phố đáng sống với biển Mỹ Khê, bán đảo Sơn Trà và cầu Rồng.</p>
+</section>
+
+<!-- HaiPhong.html -->
+<section id="haiphong">
+  <h2>Hải Phòng</h2>
+  <img src="https://images.unsplash.com/photo-1599707251803-d7f6adbc89d6" alt="Hải Phòng">
+  <p>Thành phố hoa phượng đỏ nổi bật với Đồ Sơn và Cát Bà.</p>
+</section>
+
+<!-- CanTho.html -->
+<section id="cantho">
+  <h2>Cần Thơ</h2>
+  <img src="https://images.unsplash.com/photo-1600077105884-92a4f75b1219" alt="Cần Thơ">
+  <p>Miền Tây sông nước với chợ nổi Cái Răng và bến Ninh Kiều.</p>
+</section>
+
+<!-- Hue.html -->
+<section id="hue">
+  <h2>Huế</h2>
+  <img src="https://images.unsplash.com/photo-1580870069867-74c57ee1bb07" alt="Huế">
+  <p>Cố đô với Đại Nội, lăng tẩm và dòng sông Hương thơ mộng.</p>
+</section>
+
+<!-- Northern Mountains -->
+<section id="sapa">
+  <h2>Sapa</h2>
+  <img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21" alt="Sapa">
+  <p>Thị trấn sương mù với ruộng bậc thang và Fansipan.</p>
+</section>
+
+<section id="hg">
+  <h2>Hà Giang</h2>
+  <img src="https://images.unsplash.com/photo-1601805264765-df3c595a927d" alt="Hà Giang">
+  <p>Cao nguyên đá Đồng Văn, Mã Pí Lèng và mùa hoa tam giác mạch.</p>
+</section>
+
+<section id="mcc">
+  <h2>Mù Cang Chải</h2>
+  <img src="https://images.unsplash.com/photo-1600054803655-c5a39a0eea5d" alt="Mù Cang Chải">
+  <p>Ruộng bậc thang đẹp nhất Việt Nam, đặc biệt vào mùa lúa chín.</p>
+</section>
